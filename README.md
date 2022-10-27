@@ -8,8 +8,9 @@ You can check the [paper]() and [demo page](https://masayakawamura.github.io/Dem
 <img src="./fig/proposed_model.png" width="100%">
 
 ## Multi-band iSTFT VITS and multi-stream iSTFT VITS 
+This repository is base on **[official VITS code](https://github.com/jaywalnut310/vits.git)**.<br>
+You can train the iSTFT-VITS, multi-band iSTFT VITS (MB-iSTFT-VITS), and multi-stream iSTFT VITS (MS-iSTFT-VITS) using this repository.
 ### 1. Pre-requisites
-(This part is based on [VITS](https://github.com/jaywalnut310/vits.git).)
 
 0. Python >= 3.6
 0. Clone this repository
@@ -26,7 +27,7 @@ python setup.py build_ext --inplace
 ```
 
 ### 2. Setting json file in [configs](configs)
-This repository contains iSTFT-VITS, multi-band iSTFT VITS (MB-iSTFT-VITS), and multi-stream iSTFT VITS (MS-iSTFT-VITS).
+
 | Model | How to set up json file in [configs](configs) | Sample of json file configuration|
 | :---: | :---: | :---: |
 | iSTFT-VITS | ```"istft_vits": true, ```<br>``` "upsample_rates": [8,8], ``` | ljs_istft_vits.json |
