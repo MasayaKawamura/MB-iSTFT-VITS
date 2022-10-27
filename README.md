@@ -8,7 +8,7 @@ You can check the [paper]() and [demo page](https://masayakawamura.github.io/Dem
 <img src="./fig/proposed_model.png" width="100%">
 
 ## Multi-band iSTFT VITS and multi-stream iSTFT VITS 
-This repository is base on **[official VITS code](https://github.com/jaywalnut310/vits.git)**.<br>
+This repository is based on **[official VITS code](https://github.com/jaywalnut310/vits.git)**.<br>
 You can train the iSTFT-VITS, multi-band iSTFT VITS (MB-iSTFT-VITS), and multi-stream iSTFT VITS (MS-iSTFT-VITS) using this repository.
 ### 1. Pre-requisites
 
