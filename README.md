@@ -10,6 +10,7 @@ You can check the [paper](https://arxiv.org/abs/2210.15975) and [demo page](http
 ## Multi-band iSTFT VITS and multi-stream iSTFT VITS 
 This repository is based on **[official VITS code](https://github.com/jaywalnut310/vits.git)**.<br>
 You can train the iSTFT-VITS, multi-band iSTFT VITS (MB-iSTFT-VITS), and multi-stream iSTFT VITS (MS-iSTFT-VITS) using this repository.
+We also provide the [pretrained models](https://drive.google.com/drive/folders/1CKSRFUHMsnOl0jxxJVCeMzyYjaM98aI2?usp=sharing).
 ### 1. Pre-requisites
 
 0. Python >= 3.6
