@@ -44,6 +44,27 @@ python train_latest.py -c configs/ljs_mb_istft_vits.json -m ljs_mb_istft_vits
 
 After the training, you can check inference audio using [inference.ipynb](inference.ipynb)
 
+
+
+### 4. Export to ONNX and Inference
+In order to export your trained checkpoints to ONNX, please run the following script:
+```sh
+python export_onnx.py  --model {model_ckpt}.pth --config-path config.json --output-onnx-path {path_to_exported}.onnx --device 'cpu'
+```
+
+Afterwards, you can use the exported onnx model to run inference as follows:
+```sh
+python infer_onnx.py --model {path_to_exported}.onnx --config-path config.json --output-wav-path output.wav --text "Hello world, how are you doing?"
+```
+
+
+Please note that to export to ONNX and run inference, additional packages must be installed. After setting up the environment as described above, install the following packages. This setup has been tested with ```Python 3.8```:
+
+- For ONNX export: ```torch==1.12.0```
+- For ONNX inference: ```onnxruntime==1.18.0```
+Additionally, please upgrade ```numpy==1.23.5```
+
+
 ## References
 - https://github.com/jaywalnut310/vits.git
 - https://github.com/rishikksh20/iSTFTNet-pytorch.git
